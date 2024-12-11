@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de inscripción super básico">
+    <meta name="author" content="Hernan">
+    <title>Formulario de Inscripción</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h1>Formulario de Inscripción</h1>
+
+        <label for="nombre">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+        <label for="apellido">Apellido *</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+
+        <label for="correo">Correo electrónico *</label>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electrónico" required>
+
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección">
+
+        <label for="departamento">Departamento</label>
+        <input type="text" id="departamento" name="departamento" placeholder="Ingrese su departamento">
+
+        <label for="pais">País *</label>
+        <input type="text" id="pais" name="pais" placeholder="Ingrese su país de nacimiento" required>
+
+        <label for="telefono">Teléfono de contacto</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono">
+
+        <label for="descripcion">Descripción personal (máximo 300 caracteres)</label>
+        <textarea id="descripcion" name="descripcion" maxlength="300"
+            placeholder="Escriba una breve descripción sobre usted"></textarea>
+
+        <label for="carrera">¿A qué carrera deseas inscribirte? *</label>
+        <select id="carrera" name="carrera" required>
+            <option value="">Seleccione una opción</option>
+            <option value="jobs">Jobs To Be Done</option>
+            <option value="cloud">Cloud Native</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="fundamentals">Fundamentals</option>
+            <option value="python">Python</option>
+            <option value="marketing">Marketing Digital</option>
+        </select>
+
+        <label for="modalidad">Modalidad *</label>
+        <select id="modalidad" name="modalidad" required>
+            <option value="">Seleccione una opción</option>
+            <option value="presencial">Presencial</option>
+            <option value="online">Online</option>
+        </select>
+
+        <label for="trabajo">¿Estás trabajando actualmente? Seleccione la casilla</label>
+        <input type="checkbox" id="trabajo" name="trabajo">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+    </form>
+</body>
+
+</html>
